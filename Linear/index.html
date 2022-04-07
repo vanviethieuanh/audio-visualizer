@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+    <a href="https://youtu.be/fzQ6gRAEoy0" target="_blank">Porter Robinson & Madeon - Shelter</a>
+    <div id="p5_loading" class="loadingclass"></div>
+    <div id="warning">
+        <p>WARNING: This following contain exposure to flashing lights at certain intensities and contrasting visual patterns!</p>
+        <button id="play-button" class="disabled" onclick="playsong()">Play</button>
+    </div>
+    <style>
+        body{
+            background-color: #090909;
+        }
+
+        a{
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+
+            /* center align text */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            
+
+            position: fixed;
+        }
+
+        div{
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+
+            /* center align text */
+            display: block;
+
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button#play-button{
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+            background-color: transparent;
+            border: solid cyan 1px;
+
+            /* center align text */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+
+            transition:  all ease-in-out 0.3s;
+        }
+
+        button#play-button:hover{
+            /* drop cyan shadow */
+            box-shadow: 0 0 5px cyan;
+        }
+
+        button.disabled{
+            opacity: .7;
+            cursor: not-allowed;
+        }
+    </style>
+  </body>
+</html>
