@@ -1,2 +1,3 @@
-# audio-visualizer
-A set of audio visualizer
+# Audio Visualizer
+
+- Digital Linear
